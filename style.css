@@ -25,12 +25,14 @@ main{
 }
 
 article{
-  width: 50%;
+  width: calc(50% - 20px);
+  max-width: 600px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0px 10px;
 }
 
 article > h1{
@@ -39,12 +41,13 @@ article > h1{
 }
 
 article > img{
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 
 aside{
   width: 50%;
+  max-width: 600px;
   height: 100%;
   display: flex;
 }
