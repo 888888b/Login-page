@@ -11,17 +11,27 @@ html {
 }
 
 body{
-  background-color: #0f0f1a;
   height: 100vh;
+  background-color: #0f0f1a;
 }
 
 main{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #0f0f1a;
+}
+
+.container{
+  width: 100vw;
   background-color: #0f0f1a;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  padding: 10px 0px;
 }
 
 article{
@@ -32,7 +42,7 @@ article{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 40px 10px 0px 10px;
 }
 
 article > h1{
@@ -48,7 +58,6 @@ article > img{
 aside{
   width: 50%;
   max-width: 600px;
-  height: 100%;
   display: flex;
 }
 
@@ -120,29 +129,47 @@ input::placeholder{
 
 footer{
   width: 100%;
-  background-color: #0F0F1A;
   border-top: 3px solid #29FF8B;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
 }
 
-footer > p{
+#div-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav > a{
+  color: white;
+  font-size: 2.2em;
+}
+
+#div-footer > p{
   text-align: center;
-  color: #17FFBF;
-  font: italic 500 2em "Noto Sans", sans-serif;
+  color: white;
+  font: 500 1.8em "Noto Sans", sans-serif;
 }
 
 span{
   text-decoration: underline;
-  font: italic 600 1em "Poppins", sans-serif;
+  font: italic 600 .9em "Poppins", sans-serif;
 }
 
 @media(max-width: 1000px) {
-  main{
+  .container{
     width: 100%;
-    min-height: 680px;
-    height: 80vh;
     flex-direction: column;
   }
 
@@ -173,14 +200,6 @@ span{
     max-width: 450px;
   }
 
-  footer{
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
   footer > p{
     font: italic 500 1.5em "Noto Sans", sans-serif;
   }
@@ -189,6 +208,50 @@ span{
     font: italic 600 1.1em "Poppins", sans-serif;
     text-decoration: underline;
   }
+}
+
+@media screen and (max-width: 600px) {
+
+  body{
+    height: 90vh;
+    position: relative;
+  }
+    
+  article{
+    padding: 0px 10px;
+  }
+
+  article > h1{
+    font-size: 2.2em;
+  }
+
+  label{
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  input::placeholder{
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  footer{
+    margin-top: 20px;
+  }
+
+  #div-footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+    padding: 10px 0px;
+    justify-content: center;
+  }
+
+  #div-footer > p{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+}
 
 
 

@@ -6,33 +6,51 @@
   <meta name="viewport" content="width=device-width">
   <title>Login-page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   
   <main>
-    <article>
-      <h1>Faça login</h1>
-      <h1>E entre para o nosso time</h1>
-      <img src="img/astronautic.svg" alt="Astronautic">
-    </article>
 
-    <aside>
-      <form>
-        <div id="input-form">
-          <h1 id="text-login">Login</h1>
-          <label for="usuario">Usuario</label>
-          <input type="text" placeholder="Usuario" required>
-          <label for="senha">Senha</label>
-          <input type="password" placeholder="Senha" required>
-          <button type="submit">LOGIN</button>
+    <div class="container">
+      <article>
+        <h1>Faça login</h1>
+        <h1>E entre para o nosso time</h1>
+        <img src="img/astronautic.svg" alt="Astronautic">
+      </article>
+
+      <aside>
+        <form>
+          <div id="input-form">
+            <h1 id="text-login">Login</h1>
+            <label for="usuario">Usuario</label>
+            <input type="text" placeholder="Usuario" required>
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">LOGIN</button>
+          </div>
+        </form>
+      </aside>
+    </div>
+  
+    <footer>
+    
+        <div id="div-footer">
+    
+          <nav>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+          </nav>
+    
+          <p>Login page by: <span>Vitor Hugo</span></p>
         </div>
-      </form>
-    </aside>
+  
+      </footer>
+
   </main>
-  <footer>
-    <p>Login page by: <span>Vitor Hugo</span></p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
